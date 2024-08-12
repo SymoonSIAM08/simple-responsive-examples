@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .box{
+            background-color: rgb(119, 183, 183);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .item{
+            width: 150px;
+            height: 80px;
+            background-color: rgb(187, 211, 204);
+            border: 2px solid maroon;
+
+        }
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempora culpa similique eos, corrupti recusandae ipsa fugiat numquam, hic asperiores dolorum. Modi dolores magnam possimus quis ea expedita inventore temporibus!</p>
+        </div>
+        <div class="box">
+            <h3>second box</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa commodi quibusdam totam, vitae, non nesciunt modi sunt autem dicta veniam placeat. Animi aut minus dicta architecto vero nesciunt. Dolor, nostrum.</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        
+    </div>
+    
+</body>
+</html>
